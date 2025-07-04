@@ -65,6 +65,6 @@ Don't forget to rename the `.env.example` to `.env`.
 Once the setup is complete, you can run the Streamlit application from the `Novelix-Agent` root directory.
 
 ```bash
-run streamlit run app.py
+streamlit run app.py
 ```
 The application will open in your web browser automatically.
