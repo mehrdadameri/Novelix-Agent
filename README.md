@@ -50,6 +50,7 @@ poetry install --no-root
 You will need API keys for OpenAI and Tavily Search.
 
 Add your API keys to the `.env.example` file:
+
     ```bash
     OPENAI_API_KEY=YOUR_API_KEY
     TAVILY_API_KEY=YOUR_API_KEY
