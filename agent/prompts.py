@@ -1,5 +1,4 @@
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.agents.react.agent import create_react_agent
 
 def get_agent_prompt():
     """
