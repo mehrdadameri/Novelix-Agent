@@ -51,10 +51,10 @@ You will need API keys for OpenAI and Tavily Search.
 
 Add your API keys to the `.env.example` file:
 
-    ```bash
-    OPENAI_API_KEY=YOUR_API_KEY
-    TAVILY_API_KEY=YOUR_API_KEY
-    ```
+```bash
+OPENAI_API_KEY=YOUR_API_KEY
+TAVILY_API_KEY=YOUR_API_KEY
+```
 
 Don't forget to rename the `.env.example` to `.env`.
 
