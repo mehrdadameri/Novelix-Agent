@@ -11,11 +11,10 @@ The primary goal of Novelix is to bridge the gap between a user's initial curios
 - **Interactive Deep Inquiry**: The agent initiates a two-phase dialogue to deeply understand your goals, context, and existing knowledge before starting its research.
 - **AI-Powered Synthesis**: Novelix uses your answers as a starting point to perform live web searches with the Tavily API, actively seeking out knowledge gaps, novel methodologies, and state-of-the-art findings.
 - **Transparent Reasoning**: An expandable "Thinking..." log in the UI shows the agent's real-time internal monologue, including its search queries, self-critique, and synthesis process.
-- **Structured, Novel Output**: The final output consists of 2-3 concise, single-sentence research questions that are creatively synthesized from your input and the agent's research—not just a rephrasing of what you already said.
+- **Structured, Novel Output**: The final output consists of 5-6 concise, research questions that are creatively synthesized from your input and the agent's research—not just a rephrasing of what you already said.
 
 ## Tech Stack
 
-- **Backend**: Python
 - **AI Framework**: LangChain
 - **Language Model**: OpenAI GPT-4 Series
 - **Search**: Tavily Search API
@@ -34,8 +33,8 @@ Follow these steps to run Novelix locally.
 ### 2. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd 1-Novelix
+git clone https://github.com/mehrdadameri/Novelix-Agent.git
+cd Novelix-Agent
 ```
 
 ### 3. Install Dependencies
@@ -43,32 +42,26 @@ cd 1-Novelix
 Use Poetry to install the required Python packages from the `pyproject.toml` file.
 
 ```bash
-poetry install
+poetry install --no-root
 ```
 
 ### 4. Set Up Environment Variables
 
 You will need API keys for OpenAI and Tavily Search.
 
-1.  Navigate to the `novelix` subdirectory:
-    ```bash
-    cd novelix
+Add your API keys to the `.env.example` file:
     ```
-2.  Create a `.env` file. You can copy the example file if one is provided, or create it from scratch:
-    ```bash
-    touch .env
+    OPENAI_API_KEY=YOUR_API_KEY
+    TAVILY_API_KEY=YOUR_API_KEY
     ```
-3.  Add your API keys to the `.env` file:
-    ```
-    OPENAI_API_KEY="your-openai-api-key"
-    TAVILY_API_KEY="your-tavily-api-key"
-    ```
+
+Don't forget to rename the `.env.example` to `.env`.
 
 ## Running the Application
 
-Once the setup is complete, you can run the Streamlit application from the `1-Novelix` root directory.
+Once the setup is complete, you can run the Streamlit application from the `Novelix-Agent` root directory.
 
 ```bash
-poetry run streamlit run novelix/app.py
+    run streamlit run app.py
 ```
 The application will open in your web browser automatically.
