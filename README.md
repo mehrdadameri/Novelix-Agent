@@ -1,7 +1,7 @@
 # Novelix-Agent
 Novelix is an expert-level AI agent designed to help students, academics, and professionals generate mature, logical, and novel research ideas. It moves beyond simple brainstorming by employing a rigorous, multi-phase process of inquiry, evidence-based web research, and creative synthesis.
 
-![Novelix UI](images/Novelix-UI.png)
+![Novelix UI](Images/Novelix-UI.png)
 
 ## Project Goal
 
